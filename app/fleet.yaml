@@ -1,0 +1,13 @@
+defaultNamespace: olm
+
+#namespaceLabels:
+#  pod-security.kubernetes.io/enforce: privileged
+#  pod-security.kubernetes.io/enforce-version: latest
+
+labels:
+  app: olm
+
+# Custom helm options
+helm:
+  releaseName: olm
+  chart: "git::github.com/operator-framework/operator-lifecycle-manager//deploy/chart/values?ref=v0.28.0"
