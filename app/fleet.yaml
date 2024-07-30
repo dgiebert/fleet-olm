@@ -10,4 +10,4 @@ labels:
 # Custom helm options
 helm:
   releaseName: olm
-  chart: "git::github.com/operator-framework/operator-lifecycle-manager//deploy/chart/values?ref=v0.28.0"
+  chart: "git::github.com/operator-framework/operator-lifecycle-manager//deploy/chart?ref=v0.28.0"
