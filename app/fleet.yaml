@@ -11,3 +11,13 @@ labels:
 helm:
   releaseName: olm
   chart: "git::github.com/operator-framework/operator-lifecycle-manager//deploy/chart?ref=v0.28.0"
+  values:
+    olm:
+      image:
+        ref: quay.io/operator-framework/olm:v0.28.0
+    catalog:
+      image:
+        ref: quay.io/operator-framework/olm:v0.28.0
+    package:
+      image:
+        ref: quay.io/operator-framework/olm:v0.28.0
