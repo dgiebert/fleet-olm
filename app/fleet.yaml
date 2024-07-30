@@ -12,6 +12,7 @@ helm:
   releaseName: olm
   chart: "git::github.com/operator-framework/operator-lifecycle-manager//deploy/chart?ref=v0.28.0"
   values:
+    catalog_namespace: olm
     olm:
       image:
         ref: quay.io/operator-framework/olm:v0.28.0
